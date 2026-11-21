@@ -115,6 +115,28 @@ All five REST API operations were successfully tested using the Amazon API Gatew
 
 All operations completed successfully.
 
+
+### Testing Screenshots
+
+#### 1. Create Product — POST
+![POST API Test](screenshots/04-api-post-test.png)
+
+#### 2. Retrieve All Products — GET
+![GET All Products](screenshots/05-api-get-all-products.png)
+
+#### 3. Retrieve Product by ID — GET
+![GET Product by ID](screenshots/06-api-get-product-by-id.png)
+
+#### 4. Update Product — PUT
+![PUT API Test](screenshots/07-api-put-update-product.png)
+
+#### 5. Delete Product — DELETE
+![DELETE API Test](screenshots/08-api-delete-product.png)
+
+#### 6. Verify Product Deletion — GET
+![GET After Delete](screenshots/09-api-get-after-delete.png)
+
+
 ## Monitoring
 
 Amazon CloudWatch was used to monitor Lambda execution.
