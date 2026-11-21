@@ -205,7 +205,3 @@ Potential improvements for this project include:
 - Configure API throttling and usage plans.
 - Add automated testing.
 - Implement infrastructure as code using AWS CloudFormation or Terraform.
-
-## AWS Region
-
-Asia Pacific (Tokyo) — `ap-northeast-1`
