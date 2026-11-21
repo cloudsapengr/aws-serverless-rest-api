@@ -24,7 +24,7 @@ The application uses the following AWS services:
 - **AWS IAM:** Manages permissions and access control using least-privilege principles.
 - **Amazon CloudWatch:** Collects Lambda execution logs and supports monitoring and troubleshooting.
 
-## Architecture
+### Architecture
 
 ```mermaid
 flowchart TD
