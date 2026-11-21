@@ -24,25 +24,33 @@ The application uses the following AWS services:
 - **AWS IAM:** Manages permissions and access control using least-privilege principles.
 - **Amazon CloudWatch:** Collects Lambda execution logs and supports monitoring and troubleshooting.
 
-### Architecture Flow
+## Architecture
 
-```text
-Client / User
-     |
-     v
-Amazon API Gateway
-     |
-     v
-AWS Lambda (Python 3.12)
-     |
-     v
-Amazon DynamoDB
-     |
-     v
-Product Data
+```mermaid
+flowchart TD
+    A[Client / User]
+    B[Amazon API Gateway<br/>ProductManagementAPI]
+    C[AWS Lambda<br/>ProductApiFunction]
+    D[Amazon DynamoDB<br/>Products]
+    E[Amazon CloudWatch<br/>Logs and Monitoring]
+    F[AWS IAM<br/>ProductApiLambdaRole]
+
+    A -->|HTTP Requests| B
+    B -->|Invoke Function| C
+    C -->|CRUD Operations| D
+    C -.->|Execution Logs| E
+    F -.->|Execution Permissions| C
+    F -.->|DynamoDB Access Policy| D
 ```
 
-CloudWatch collects Lambda execution logs, while IAM controls access to AWS resources.
+### Request Flow
+
+1. A client sends an HTTP request to Amazon API Gateway.
+2. API Gateway routes the request to AWS Lambda.
+3. Lambda executes Python business logic.
+4. Lambda performs CRUD operations on Amazon DynamoDB.
+5. CloudWatch collects Lambda execution logs.
+6. IAM controls Lambda permissions and access to AWS resources.
 
 ## API Endpoints
 
