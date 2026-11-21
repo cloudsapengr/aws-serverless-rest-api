@@ -117,10 +117,10 @@ All five REST API operations were successfully tested using the Amazon API Gatew
 
 ### Test Scenario
 
-1. Created a Laptop product with a price of 1200.
+1. Created a Laptop product with a price of 1500.
 2. Retrieved all products and verified the new product.
 3. Retrieved the Laptop using its unique product ID.
-4. Updated the Laptop price from 1200 to 1000.
+4. Updated the Laptop price from 1500 to 1200.
 5. Deleted the Laptop product.
 6. Retrieved all products again and confirmed the database returned an empty product list.
 
