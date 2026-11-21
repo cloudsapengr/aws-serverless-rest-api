@@ -52,6 +52,17 @@ flowchart TD
 5. CloudWatch collects Lambda execution logs.
 6. IAM controls Lambda permissions and access to AWS resources.
 
+### AWS Infrastructure Screenshots
+
+#### 1. API Gateway Configuration
+![API Gateway Configuration](screenshots/01-api-gateway.png)
+
+#### 2. Lambda Function Configuration
+![Lambda Configuration](screenshots/02-lambda-configuration.png)
+
+#### 3. DynamoDB Table Configuration
+![DynamoDB Table](screenshots/03-dynamodb-table.png)
+
 ## API Endpoints
 
 | HTTP Method | Endpoint | Description |
